@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{477F88A4-7C24-4291-8DA5-D1DDB17613AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerService", "src\WorkerService\WorkerService.csproj", "{D2405826-5DCA-4865-B485-E86B8385B1CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{060DAE19-699C-4682-9D2B-3A483EDBD223}"
+	ProjectSection(SolutionItems) = preProject
+		kube.yaml = kube.yaml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2405826-5DCA-4865-B485-E86B8385B1CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2405826-5DCA-4865-B485-E86B8385B1CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2405826-5DCA-4865-B485-E86B8385B1CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2405826-5DCA-4865-B485-E86B8385B1CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D2405826-5DCA-4865-B485-E86B8385B1CA} = {477F88A4-7C24-4291-8DA5-D1DDB17613AC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB0CF846-FFDE-4C39-87F3-54A127457D0D}
+	EndGlobalSection
+EndGlobal
