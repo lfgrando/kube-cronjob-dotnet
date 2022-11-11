@@ -1,6 +1,7 @@
+apiVersion: batch/v1
 kind: CronJob
 metadata:
-  name: mycronjob
+  name: mycronjob-with-dotnet
 spec:
   schedule: "*/5 * * * *" # Runs every 5 minutes
   jobTemplate:
@@ -8,7 +9,6 @@ spec:
       template:
         spec:
           containers:
-          - name: mycronjob
-            image: << registry url (we'll fill this in next) >>
-            env:
+          - name: mycronjob-with-dotnet
+            image: lfgrando/kube-cronjob-dotnet:latest
           restartPolicy: OnFailure
