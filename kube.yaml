@@ -3,9 +3,10 @@ kind: CronJob
 metadata:
   name: mycronjob-with-dotnet
 spec:
-  schedule: "*/5 * * * *" # Runs every 5 minutes
+  schedule: "*/1 * * * *" # Runs every 1 minutes
   jobTemplate:
     spec:
+      ttlSecondsAfterFinished: 10
       template:
         spec:
           containers:
